@@ -61,4 +61,3 @@ buttons.forEach(button => {
     function isOperator(value) {
         return value === "+" || value === "-" || value === "*" || value === "/";
     }       
-    
