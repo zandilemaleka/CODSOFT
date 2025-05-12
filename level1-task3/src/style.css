@@ -1,2 +1,66 @@
-/* Your CSS */
-body { background: #f0f0f0; }
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);  
+    margin: 0;  
+    height:100vh;   
+}
+
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    width: 500px;
+    padding: 20px;
+}
+#display {
+    width: 90%;
+    height: 100px;
+    border: none;
+    background-color: #a7af7c;
+    font-size: 3.5rem;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 5px;
+    color: white;
+    box-shadow: inset -8px 0px 8px rgba(0, 0, 0.15);
+   
+    
+}
+
+#buttons {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button {
+    background-color: hsl(0, 0%, 30%);
+    border: none;
+    color: white;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 100px;
+    box-shadow: inset -8px 0px 8px rgba(0, 0, 0.15);
+    cursor: pointer;                        
+}
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn {
+    background-color: hsl(133, 90%, 49%);
+}
+.operator-btn:hover {
+    background-color: hsl(133, 90%, 65%);
+}
+.operator-btn:active {
+    background-color: hsl(133, 90%, 75%);
+}
