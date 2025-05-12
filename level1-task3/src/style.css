@@ -36,6 +36,14 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
+
+#delete {
+    font-size: 2.4rem;
+}
+#calculate {
+    grid-row: span 2;
+}
+  
 button {
     background-color: hsl(0, 0%, 30%);
     border: none;

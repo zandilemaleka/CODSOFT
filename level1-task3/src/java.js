@@ -2,21 +2,38 @@ const display = document.getElementById("display");
 const buttons = document.querySelectorAll("#buttons button");
 const calculateButton = document.getElementById("calculate");
 const clearButton = document.getElementById("clear");
+const deleteButton = document.getElementById("delete");
+const percentButton = document.getElementById("percent");
 
 let currentInput = "";
 
 buttons.forEach((button) => {
-  const value = button.getAttribute("data-value");
-  if (value) {
     button.addEventListener("click", () => {
-      currentInput += value;
-      display.value = currentInput;
+      if (button === percentButton) {
+    
+        currentInput = (parseFloat(display.value) / 100).toString();
+        display.value = currentInput;
+      } else {
+    
+        const value = button.getAttribute("data-value");
+        if (value) {
+          currentInput += value;
+          display.value = currentInput;
+        }
+      }
     });
-  }
-});
+    }); 
 clearButton.addEventListener("click", () => {
   currentInput = "";
   display.value = "";
+});
+
+
+deleteButton.addEventListener("click", () => {
+  if (currentInput.length > 0) {
+    currentInput = currentInput.slice(0, -1); 
+    display.value = currentInput;
+  }
 });
 
 calculateButton.addEventListener("click", () => {
@@ -29,6 +46,7 @@ calculateButton.addEventListener("click", () => {
     currentInput = "";
   }
 });
+
 
 function calculateExpression(expression) {
   const tokens = expression.split(/([\+\-\*\/])/);
