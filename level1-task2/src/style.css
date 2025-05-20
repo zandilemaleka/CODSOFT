@@ -5,10 +5,45 @@ padding: 0;
 
 .main{
     width: 100%;
-    background-image: url("../images/grey-spots.jpg");
+    background-image: url("../images/beauty.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    width: 86%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin: auto;
+}
+.navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+}
+ul {
+    margin-top: -4%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px
+}
+ul li a{
+    text-decoration: none;
+    color: darkslategray;
+    margin-top: -3%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.4s ease;      
+}
+ul li a:hover{
+    color: rgb(230, 104, 59);
+    background-color: darkslategray;
+    border: none;
 }
