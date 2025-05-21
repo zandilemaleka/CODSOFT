@@ -1,6 +1,7 @@
 *{
 margin: 0;
 padding: 0;
+scroll-behavior: smooth;
 }
 
 .main{
@@ -22,11 +23,22 @@ padding: 0;
     margin: auto;
 }
 .navbar .logo{
-    width: 160px;
-    cursor: pointer;
-    margin-top: -3%;
-    margin-left: -2%;
+    font-size: 2em;
+    font-weight: 800;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
 }
+.navbar .logo:hover{
+    opacity: 1;
+}
+.navbar .logo span{
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    background-clip: text;
+    color: transparent;
+}
+
+
 ul {
     margin-top: -4%;
 }
@@ -49,7 +61,7 @@ ul li a:hover{
 }
 .info {
     margin-left: 7%;
-    margin-top: 8%;
+    margin-top: 3%;
 }
 .info h1{
     font-size: 65px;
@@ -81,20 +93,24 @@ ul li a:hover{
     position : absolute;
     right: 100px;
     bottom: 0;
-    border-radius: 100px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 .image img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    position: relative;
+    height: 400px;
+    left: 40%;
+    border-radius: 200px;
+    position: absolute;
+    bottom: 100px;
+    transform: translate(-55%, 0);
+    transition: all 0.4s ease;
     
 }
-.image img:hover {
-    transform: translate(10px);
+.image:hover .design {
+    left: 55%;
+}
+.menu {
+    font-size: 3rem;
+    color: white;
+    display: none;
 }
