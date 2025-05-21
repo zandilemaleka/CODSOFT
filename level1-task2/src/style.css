@@ -76,6 +76,7 @@ ul li a:hover{
     font-size: 18px;
     line-height: 24px;
     
+    
 }
 .info span {
     color: rgb(230, 104, 59);
@@ -128,15 +129,20 @@ ul li a:hover{
     background: #6cff52;
     border-radius: 10px;
 }
+.heading {
+    font-size: 5rem;
+    color: rgb(230, 104, 59);
+}
 #about {
     display: flex;
-    
+    margin-left: 7%;
     justify-content: center;
     align-items: center;
     gap: 5em;
 }
 #about img {
     width: 30vw;
+    align-items: center;
 
     border-radius: 1em;
 }
@@ -151,14 +157,20 @@ ul li a:hover{
 }
 .about-box p{
     color: black;
-    opacity: 0.8;
     margin-bottom: 40px;
     line-height: 1.6;
+    font-size: 18px;
+    align-items: center;
+    text-align: justify;
 }
 .skills {
     display: flex;
     text-align: left;
     gap: 10em;
+    
+}
+#skills {
+    font-size: 5rem;
 }
 .skills ul {
     font-size: 1.3em;
@@ -188,9 +200,8 @@ ul li a:hover{
 
 }
 .projects{
-    background-image: url("../images/beauty.jpg");
-    background-size: cover;
-    background-position: center no repeat;
+    margin-left: 7%;
+    margin-right: 2%;
 }
 .projects-box {
     display: grid;
@@ -201,7 +212,7 @@ ul li a:hover{
     row-gap: 5em;
 }
 .projects-card {
-    max-width: 400px;
+    max-width: 300px;
     height: 600px;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(30px);
@@ -213,7 +224,7 @@ ul li a:hover{
     align-items: center;
     padding: 5rem 2rem;
     text-align: center;
-    gap: 2rem;
+    gap: 1.2rem;
     transition: all 0.4s ease;
     cursor: pointer;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -246,10 +257,12 @@ ul li a:hover{
     transition: all 0.4s ease;
     cursor: pointer;
 }
+.btn:hover {
+    background-color: rgb(59, 174, 209);
+}
 .contact {
-    background-image: url("../images/beauty.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color: #fdfdfd;
+    margin-left: 7%;
 }
 .contact h2 {
     margin-bottom: 3rem;
@@ -273,19 +286,30 @@ ul li a:hover{
     width: 70%;
     padding: 2.5rem;
     border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgb(244, 3, 3);
     background-color: rgba(255, 255, 255, 0.3);
     font-size: 1.8rem;
     margin: 1.5rem 0;
+    color:black;
     resize: none;
 }
 .contact form .btn {
     margin-top: 2rem;
 }
+.footer {
+    background-color: #fdfdfd;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+
+
+}
 .footer .social a:hover {
-    color: rgb(230, 104, 59);
+    background-color: rgb(230, 104, 59);
     transform: scale(1.2)translate(-10px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 42px;
+    height: 42px;
 }
 .footer ul {
    margin-top: 0;
@@ -308,4 +332,10 @@ ul li a:hover{
     list-style: none;
     display: inline-block;
     padding: 0 15px;
+}
+.footer p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: rgb(36, 32, 30);
 }
