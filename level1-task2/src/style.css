@@ -91,6 +91,7 @@ ul li a:hover{
     margin: 26px 0;
     border-radius: 10px;
     font-size: 16px;
+    font-weight: 600;
     display: inline-block;
     transition: all 0.4s ease;                          
 }
