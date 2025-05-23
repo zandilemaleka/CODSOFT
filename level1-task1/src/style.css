@@ -100,7 +100,7 @@ ul li a:hover {
   
 }
 .content .par{
-    max-width: 800px;
+    max-width: 600px;
     padding-left: 20px;
     padding-bottom: 25px;
     letter-spacing: 1.2px;
@@ -113,4 +113,28 @@ ul li a:hover {
   padding-left: 20px;
   letter-spacing: 2px;
 
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #f1c40f;    
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.content .cn:hover {
+  background: white;
+}
+.content .cn a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s ease-in-out;
+}
+.content span {
+  font-size: 60px;
+  color: #f1c40f;
 }
