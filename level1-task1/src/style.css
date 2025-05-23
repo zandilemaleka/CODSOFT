@@ -94,16 +94,18 @@ ul li a:hover {
   width: 80%;
   position: relative;
   height: auto;
-    margin: 0 auto;
+    margin: 2%;
     color: white;
   
   
 }
 .content .par{
+    max-width: 800px;
     padding-left: 20px;
     padding-bottom: 25px;
     letter-spacing: 1.2px;
     line-height: 30px;
+    text-align: justify;
     }
 .content h1 {
   font-size: 50px;
