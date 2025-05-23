@@ -138,3 +138,98 @@ ul li a:hover {
   font-size: 60px;
   color: #f1c40f;
 }
+.form {
+    width: 300px;
+    height: 430px;
+    background: rgba(0, 0, 0, 0.8);
+
+    position: absolute;
+    top: -40px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2 {
+    color: #f1c40f;
+    background-color: white;
+    text-align: center;
+    width: 220px;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 8px;  
+}
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid #f1c40f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.form input:focus {
+    outline: none;
+}
+::placeholder {
+    color: white;
+    font-size: 16px;
+}
+.form .btnn {
+    width: 200px;
+    height: 40px;
+    background: #f1c40f;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}  
+.form .btnn:hover {
+    background: white;
+    color:#f1c40f
+}     
+.form .btnn a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}    
+.form .link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.form .link a {
+    text-decoration: none;
+    color: #f1c40f;
+
+}
+.liw {
+padding-top: 10px;
+padding-bottom: 10px;
+
+text-align: center;
+}
+.icons a {
+    text-decoration: none;
+    color: white;
+    
+}
+.icons i {
+    font-size: 20px;
+    color: white;
+    padding-left: 30px;
+    padding-top: 5px;
+    transition: all 0.4s ease-in-out;
+
+}
+.icons i:hover {
+    color: #f1c40f;
+}
