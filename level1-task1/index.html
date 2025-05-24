@@ -8,7 +8,7 @@
     <title>Landing Page</title>
 </head>
 <body>
-    <div class="main">
+    <div class="main" id="home">
 <div class="navbar">
     <div class="icon">
         <img src="images/logo.jpg" class="logo" width="100px" height="100px">
@@ -16,11 +16,11 @@
     </div>
 <div class="menu">
     <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#contact">CONTACT</a></li>
     </ul>
 
 </div>
@@ -58,6 +58,47 @@
 
 </div>
     </div>
+<section class="section" id="about">
+<h2> <span>About Us</span></h2>
+<p> We are passionate community of book lovers who 
+    gather to explore diverse stories, disucss powerful narratives,
+    and build lasting connections through reading.
+</p>
+<div class="images-row">
+<img src="images/books.jpg" alt="" class="about-img1">
+<img src="images/group.jpg" alt="" class="about-img2" >
+</div>
+</section>
 
+<section id="services" class="section">
+<h2> <span> What We Offer</span></h2>
+<ul>
+    <li> <i class="fas fa-book"></i> Monthly Book Selections</li>
+    <li> <i class="fas fa-comments"></i> Engaging Discussions</li>
+    <li> <i class="fas fa-calendar-alt"></i> Events and Meetups</li>
+    <li> <i class="fas fa-users"></i> Community Support</li>
+    <li> <i class="fas fa-gift"></i> Exclusive Member Benefits</li>
+</ul>
+
+</section>
+   
+<section id="blog" class="section">
+<h2> <span> Our Blog</span></h2>
+<p> Read our members' reflections, reviews,
+     and peronal takes on our latest book selection. 
+    Stay inpired and involved. </p>
+    <a href="#" class="more">Read More</a>
+
+</section>
+<section id="contact" class="section">
+<h2> <span> Contact Us</span></h2>
+<form action="#">
+    <input type="text" name="name" placeholder="Your Name" class="name">
+    <input type="email" name="email" placeholder="Your Email" class="email">
+    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn-msg">Send Message</button>
+</form>
+
+</section>
 </body>
 </html>

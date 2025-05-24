@@ -1,14 +1,21 @@
 * {
   margin: 0;
-    padding: 0;  
+    padding: 0; 
+    scroll-behavior: smooth; 
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.main {
-    width: 100%;
+    
+    
+    body {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../images/1.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.main {
+    width: 100%;
+    
     height: 100vh;
 }
 .navbar {
@@ -232,4 +239,148 @@ text-align: center;
 }
 .icons i:hover {
     color: #f1c40f;
+}}
+.section {
+    padding: 60px 10%;
+    color:white;
 }
+#about {
+    text-align: justify;
+    width: 100%;
+    line-height: 30px;
+    color: white;
+    margin-left: -6%;
+}
+#about h2 {
+    margin-top: 20px;
+}
+#about p {
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 20px;
+}
+#about span {
+    font-size: 60px;
+    color: #f1c40f;
+}
+.images-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.images-row img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.images-row img:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+#services {
+    margin-left: -6%;
+}
+#services h2 {
+    margin-top: 20px;
+    
+
+}
+#services span {
+    font-size: 60px;
+    color: #f1c40f;
+}
+#services ul li {
+font-size: 20px;
+transition: transform 0.4s ease-in-out;
+}
+#services ul li:hover {
+    transform: translateY(-5px);
+}
+#blog {
+    margin-left: -6%;
+}
+#blog h2 {
+    margin-top: 20px;
+}
+#blog p{
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#blog span {
+    font-size: 60px;
+    color: #f1c40f;
+}
+.more {
+    width: 100px;
+    height: 40px;
+    background: #f1c40f;
+    border-radius: 10px;
+    border: none;
+    border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 5px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+
+}
+.more:focus {
+    outline: none;
+}
+.more:hover {
+    background: white;
+}
+#contact {
+    margin-left: -6%;
+}
+#contact h2 {
+    margin-top: 20px;
+}   
+#contact span {
+    font-size: 60px;
+    color: #f1c40f;
+}
+#contact input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid #f1c40f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.btn-msg {
+    width: 200px;
+    height: 40px;
+    background: #f1c40f;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.btn-msg:hover {
+    background: white;
+    color:#f1c40f
+}
+
+
