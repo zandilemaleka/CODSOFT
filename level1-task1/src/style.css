@@ -342,6 +342,12 @@ transition: transform 0.4s ease-in-out;
 .more:hover {
     background: white;
 }
+.form-row {
+    display: flex;
+    flex: end;
+    gap: 20px;
+    
+}
 #contact {
     margin-left: -6%;
 }
@@ -375,6 +381,7 @@ transition: transform 0.4s ease-in-out;
     color: white;
     font-size: 18px;
     margin-top: 30px;
+    margin-left: 50px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
@@ -382,5 +389,19 @@ transition: transform 0.4s ease-in-out;
     background: white;
     color:#f1c40f
 }
+#contact textarea {
+    width: 240px;
+    height: 100px;
+    background: transparent;
+    border: 1px solid #f1c40f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 10px;
+}   
 
 
