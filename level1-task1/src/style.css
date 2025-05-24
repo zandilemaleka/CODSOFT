@@ -32,7 +32,14 @@
   width: 100px;
   height: 100px;
   margin-top: 50px;
+  clip-path: circle(45%);
+  transition: all 0.4s ease-in-out;
   
+}
+.icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+  clip-path: ellipse(50% 40% at 50% 50%);
 }
 .menu {
   width: 400px;
